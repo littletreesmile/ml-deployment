@@ -1,5 +1,5 @@
 # ml-deployment
-It is an end-to-end ML CI/CD deployment to AWS EC2 instance
+It is an end-to-end ML CI/CD deployment to AWS EC2 instance.
 
 # Wrap models in a Flask app for online request
 1. Check ```app.py```, which include a template to wrap model predictions.
