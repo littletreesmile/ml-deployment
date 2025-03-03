@@ -1,16 +1,16 @@
 
 from flask import Flask, render_template, request
-from transformers import MarianMTModel, MarianTokenizer
+# from transformers import MarianMTModel, MarianTokenizer
 
 app = Flask(__name__)
 
 def translate(input_text):
-    model_name = "Helsinki-NLP/opus-mt-zh-en"
-    tokenizer = MarianTokenizer.from_pretrained(model_name)
-    model = MarianMTModel.from_pretrained(model_name)
-    translated = model.generate(**tokenizer(input_text, return_tensors="pt", padding=True))
-    res = [tokenizer.decode(t, skip_special_tokens=True) for t in translated]
-    return res[0] + "  -- xiaofat_LN"
+    # model_name = "Helsinki-NLP/opus-mt-zh-en"
+    # tokenizer = MarianTokenizer.from_pretrained(model_name)
+    # model = MarianMTModel.from_pretrained(model_name)
+    # translated = model.generate(**tokenizer(input_text, return_tensors="pt", padding=True))
+    # res = [tokenizer.decode(t, skip_special_tokens=True) for t in translated]
+    return input_text + "  -- xiaofat_LN"
 
 
 @app.route("/", methods=["GET", "POST"])
