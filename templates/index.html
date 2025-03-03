@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Chinese Translator</title>
+</head>
+<body>
+    <h2>English to Chinese Translator</h2>
+    <form method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter Chinese text here...">{{ input_text }}</textarea><br><br>
+        <button type="submit">Translate</button><br><br>
+        <textarea rows="4" cols="50" readonly>{{ translated_text }}</textarea>
+    </form>
+</body>
+</html>
