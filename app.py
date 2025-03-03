@@ -24,5 +24,5 @@ def index():
 
 
 if __name__ == "__main__":
-    # app.run(debug=False, host="0.0.0.0", port=8080)  # for deployment
-    app.run(debug=False, port=8080)  # for local run
+    app.run(debug=False, host="0.0.0.0", port=8080)  # for deployment
+    # app.run(debug=False, port=8080)  # for local run
